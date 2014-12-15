@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implementation of template_preprocess_node
+ */
+
+function qubeta_maps_preprocess(&$variables, $hook) {
+  switch ($hook) {
+    case 'openlayers_map':
+      drupal_add_css('http://js.api.here.com/v3/3.0/mapsjs-ui.css', 'external');
+      drupal_add_js('http://js.api.here.com/v3/3.0/mapsjs-core.js', 'external');
+      drupal_add_js('http://js.api.here.com/v3/3.0/mapsjs-service.js', 'external');
+      drupal_add_js('http://js.api.here.com/v3/3.0/mapsjs-mapevents.js', 'external');
+      drupal_add_js('http://js.api.here.com/v3/3.0/mapsjs-ui.js', 'external');
+      drupal_add_js(drupal_get_path('module', 'qubeta_maps').'/js/qubeta_maps.js');
+      drupal_add_css(drupal_get_path('module', 'qubeta_maps').'/css/qubeta_maps.css');
+
+      $features = array(
+        'features' => $variables['map']['layers']['qubeta_map_openlayers_1']['features']
+      );
+      drupal_add_js(array('qubeta_maps' => $features), 'setting');
+      break;
+
+    default:
+      break;
+  }
+}

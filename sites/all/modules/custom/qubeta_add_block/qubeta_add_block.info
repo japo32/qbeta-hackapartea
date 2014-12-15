@@ -1,0 +1,7 @@
+name = Qubeta Add Toilet Block
+description = Toilet Block that pops up.
+core = 7.x
+package = Qubeta Site
+version = 7.x-1.0
+project = qubeta_add_block
+stylesheets[all][] = css/qubeta_add_block.css

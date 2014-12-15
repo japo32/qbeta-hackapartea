@@ -1,0 +1,6 @@
+name = Qubeta Maps HERE Integration
+description = HERE maps API integration
+core = 7.x
+package = Qubeta Site
+version = 7.x-1.0
+project = qubeta_maps

@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implementation of hook_block_info
+ */
+
+function qubeta_add_block_block_info() {
+  $blocks['qubeta_add_block'] = array(
+    'info' => t('Qubeta Add Block'),
+    'region' => 'footer',
+    'status' => TRUE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view
+ */
+
+function qubeta_add_block_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'qubeta_add_block':
+      $block['subject'] = t('Add Toilet');
+      $block['content'] = l(t('+'), 'node/add/toilet', array('attributes' => array('class' => array('add-toilet-link'))));
+      break;
+  }
+  return $block;
+}

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Node: Toilet feature.
+ */
+
+include_once 'feature_node_toilet.features.inc';

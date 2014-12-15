@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Mapping: Basic Mapping feature.
+ */
+
+include_once 'features_mapping_basic_mapping.features.inc';

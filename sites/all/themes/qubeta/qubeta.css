@@ -1,0 +1,173 @@
+
+/* General Styles*/
+body {
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+
+.front #page-title {
+  display: none;
+}
+
+#page {
+  max-width: none;
+}
+
+#main {
+  padding-top: 0;
+}
+
+#content,
+#navigation {
+  padding: 0;
+}
+
+#navigation {
+  top: 10px;
+  right: 20px;
+  width: auto;
+  text-align: right;
+}
+
+.logged-in #navigation {
+  top: 30px;
+}
+
+#navigation a {
+  color: white;
+  text-decoration: underline;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+#navigation a:hover {
+  color: #f26561;
+}
+
+#header #navigation li {
+  border-right: 1px solid white;
+  padding: 0 20px;
+}
+
+#header #navigation li:last-child {
+  border-right:none;
+  padding-right: 0;
+}
+
+
+
+#header {
+  background: #000 url(images/header_image.jpg) center top no-repeat;
+  height: 598px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#logo {
+  float: none;
+}
+
+#logo img {
+  padding-top: 80px;
+}
+
+#block-block-1 {
+  color: white;
+  font-size: 24px;
+  margin-top: 60px;
+}
+
+
+#block-block-1 p {
+  line-height: 1.3em;
+  margin: 0 0 0.5em 0;
+}
+
+#block-block-1 a {
+  text-decoration: underline;
+}
+
+#block-block-1 p:nth-of-type(1) a {
+  color: #f26561;
+}
+
+#block-block-1 p:nth-of-type(2) a {
+  color: #3fc5c2;
+}
+
+
+#qubeta_map {
+  height: 500px;
+  overflow: hidden;
+}
+
+#qubeta_map a {
+  color: #3fc5c2;
+}
+
+#qubeta_map a:hover {
+  color: #ffffff;
+}
+
+#qubeta_map .H_ib_content {
+  padding: 0 0.5em;
+  margin: 0.5em 0;
+}
+
+
+#qubeta_map .rate-image {
+  margin-bottom: 10px;
+}
+
+#qubeta_map .views-label {
+  font-size: 12px;
+}
+
+/* Search Form */
+#search-block-form input[type=text] {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 40px 10px 10px;
+  font-size: 22px;
+  width: 100%;
+}
+
+#search-block-form input[type=submit] {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #f16561;
+  border: 3px solid #d35855;
+  padding: 7px 13px 6px 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#search-block-form .container-inline {
+  width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/*hax*/
+
+#block-block-1 .harang {
+  position: absolute;
+  top: -110px;
+  display: block;
+  margin-left: 96px;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 145px;
+  right: 0;
+  left: 50%;
+  height: 48px;
+}

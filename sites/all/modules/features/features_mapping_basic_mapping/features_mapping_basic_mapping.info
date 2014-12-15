@@ -1,0 +1,16 @@
+name = Mapping: Basic Mapping
+description = Basic Mapping page.
+core = 7.x
+package = Qubeta Site
+version = 7.x-1.1
+project = features_mapping_basic_mapping
+dependencies[] = openlayers
+dependencies[] = openlayers_views
+dependencies[] = views
+features[ctools][] = openlayers:openlayers_maps:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[openlayers_maps][] = geofield_formatter_map_2
+features[views_view][] = qubeta_map
+features_exclude[dependencies][ctools] = ctools
+mtime = 1418454310

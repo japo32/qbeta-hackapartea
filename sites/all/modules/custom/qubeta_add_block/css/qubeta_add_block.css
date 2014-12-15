@@ -1,0 +1,29 @@
+
+/* add block */
+#block-qubeta-add-block-qubeta-add-block {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+#block-qubeta-add-block-qubeta-add-block .block-title {
+  display: none;
+}
+
+
+#block-qubeta-add-block-qubeta-add-block .add-toilet-link {
+  font-size: 37px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  color: #ffffff;
+  background-color: #f26561;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  padding: 35px 38px 40px 34px;
+  box-sizing: border-box;
+}
+
+#block-qubeta-add-block-qubeta-add-block .add-toilet-link:hover {
+  background-color: #3fc5c2;
+}
